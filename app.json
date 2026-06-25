@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Clinic App",
+    "slug": "clinic-app",
+    "version": "1.0.0",
+    "owner": "ares.triandos",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTabletMode": false,
+      "bundleIdentifier": "com.triandoschiropractic.clinic"
+    },
+    "android": {
+      "package": "com.triandoschiropractic.clinic",
+      "versionCode": 1
+    },
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "fbf368fa-0ae9-4140-a485-5c4cbc748780"
+      }
+    }
+  }
+}

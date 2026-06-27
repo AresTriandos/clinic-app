@@ -1,4 +1,4 @@
-name: Build iOS
+name: Build Android & iOS
 
 on:
   push:
@@ -21,6 +21,11 @@ jobs:
       - name: Setup EAS CLI
         run: npm install -g eas-cli
 
+      - name: Build Android
+        run: eas build --platform android --profile preview --non-interactive --wait
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      
       - name: Build iOS for App Store
         run: eas build --platform ios --profile production --non-interactive --wait
         env:
